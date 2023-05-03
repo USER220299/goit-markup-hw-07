@@ -992,15 +992,17 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
-
+.menu-toggle-icon {
+  stroke: var(--modal-icon);
+}
 .menu-container {
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 80px 35px 40px;
   background-color: var(--white-color);
   z-index: 999;
@@ -1013,12 +1015,12 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
   transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+/* .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
   color: #fff;
-}
+} */
 
 .mobile-menu {
   padding: 0;
@@ -1027,22 +1029,24 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
   margin-bottom: auto;
 }
 
-.mobile-menu .link {
+.menu-contacts {
+  font-weight: 700;
   font-size: 36px;
   text-align: left;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--modal-menu-text-color);
-  display: block;
-  text-decoration: none;
+  display: inline-block;
 }
 
-.mobile-menu:not(:last-child) {
-  padding-bottom: 40px;
+.menu-contacts:focus,
+.menu-contacts:hover {
+  color: var(--icon-hover-color);
 }
 
 .contacts-menu {
+  font-weight: 700;
   font-size: 36px;
   text-align: left;
   line-height: 1.11;
@@ -1054,9 +1058,34 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
 .mobile-contacts {
   margin-bottom: 48px;
 }
-
+.contacts-menu-mail {
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--modal-menu-text-color);
+}
 .mobile-social {
   display: flex;
   gap: 56px;
+  justify-content: left;
+}
+.menu-close-modal {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  fill: var(--modal-icon);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
