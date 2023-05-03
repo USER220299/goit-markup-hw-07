@@ -53,21 +53,40 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
-    <main>
-      <!-- Hero section -->
-      <section class="hero">
+    <!-- <main> -->
+    <!-- Hero section -->
+    <!-- <section class="hero">
         <div class="container hero-container">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button class="modal-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Features section -->
-      <section class="feature features-container">
+    <!-- Features section -->
+    <!-- <section class="feature features-container">
         <div class="container">
           <h2 hidden class="title-feature">Our feature</h2>
           <ul class="list features-list-container">
@@ -121,9 +140,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- We doing section -->
-      <section class="wedoing">
+      </section> -->
+    <!-- We doing section -->
+    <!-- <section class="wedoing">
         <div class="container wedoing-container">
           <h2 class="title-wedoing">What are we doing</h2>
           <ul class="list wedoing-list-container">
@@ -156,9 +175,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Team section -->
-      <section class="team">
+      </section> -->
+    <!-- Team section -->
+    <!-- <section class="team">
         <div class="container team-container">
           <h2 class="title-team">Our Team</h2>
           <ul class="list team-list-container">
@@ -429,9 +448,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Customers section -->
-      <section class="customers">
+      </section> -->
+    <!-- Customers section -->
+    <!-- <section class="customers">
         <div class="container">
           <h2 class="title-customers">Customers</h2>
           <ul class="client list">
@@ -480,9 +499,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- Footer section -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-indent">
           <a class="logo-container footer-logo-one link" href="./index.html"
@@ -569,9 +588,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn-hero" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -655,6 +674,96 @@
         </form>
       </div>
     </div>
+     -->
+    <!-- Modal menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button" data-modal-close>
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icon.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li><a href="" class="link">Studio</a></li>
+        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li>
+          <a class="contacts-menu link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social list">
+        <li class="footer-icon-media">
+          <a
+            class="footer-link link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="nooperer noreferrer"
+            aria-label="Instagram icon"
+          >
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-media">
+          <a
+            class="footer-link link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="nooperer noreferrer"
+            aria-label="Twitter icon"
+          >
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-media">
+          <a
+            class="footer-link link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="nooperer noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-media">
+          <a
+            class="footer-link link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="nooperer noreferrer"
+            aria-label="Linkedin icon"
+          >
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
