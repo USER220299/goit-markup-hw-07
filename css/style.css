@@ -1030,6 +1030,7 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
 }
 
 .menu-contacts {
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 36px;
   text-align: left;
@@ -1037,15 +1038,18 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--modal-menu-text-color);
-  display: inline-block;
+  display: block;
 }
-
-.menu-contacts:focus,
-.menu-contacts:hover {
+.mobile-menu {
+  margin-bottom: 40px;
+}
+.mobile-menu:focus,
+.mobile-menu:hover {
   color: var(--icon-hover-color);
 }
 
 .contacts-menu {
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 36px;
   text-align: left;
