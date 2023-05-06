@@ -138,29 +138,44 @@
           <ul class="list wedoing-list-container">
             <li class="wedoing-list">
               <img
+                srcset="
+                  ./images/wedoing/img-1_doing@1x.jpg 1x,
+                  ./images/wedoing/img-1_doing@2x.jpg 2x
+                "
                 class="picture"
-                src="./images/wedoing/img-1.jpg"
+                src="./images/wedoing/img-1_doing@1x.jpg"
                 alt="computer screen"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="wedoing-list">
               <img
+                srcset="
+                  ./images/wedoing/img-2_doing@1x.jpg 1x,
+                  ./images/wedoing/img-2_doing@2x.jpg 2x
+                "
                 class="picture"
-                src="./images/wedoing/img-2.jpg"
+                src="./images/wedoing/img-2_doing@1x.jpg"
                 alt="phone screen"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="wedoing-list">
               <img
+                srcset="
+                  ./images/wedoing/img-3_doing@1x.jpg 1x,
+                  ./images/wedoing/img-3_doing@2x.jpg 2x
+                "
                 class="picture"
-                src="./images/wedoing/img-3.jpg"
+                src="./images/wedoing/img-3_doing@1x.jpg"
                 alt="computer and phone screen"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -172,12 +187,40 @@
           <h2 class="title-team">Our Team</h2>
           <ul class="list team-list-container">
             <li class="field team-card">
-              <img
-                src="./images/team/img-1.jpg"
-                alt="Product designer photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/team/img_team1@1x.jpg 1x,
+                    ./images/team/img_team1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img_team1@1x.jpg 1x,
+                    ./images/team/img_team1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/img_team1@1x.jpg 1x,
+                    ./images/team/img_team1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="/images/team/img_team1@1x.jpg"
+                  alt="Product designer photo"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="card card-list-team">
                 <h3 class="name">Mark Guerrero</h3>
                 <p class="position">Product Designer</p>
@@ -238,12 +281,39 @@
               </div>
             </li>
             <li class="field team-card">
-              <img
-                src="./images/team/img-2.jpg"
-                alt="Photo frontend developer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/team/img_team2@1x.jpg 1x,
+                    ./images/team/img_team2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img_team2@1x.jpg 1x,
+                    ./images/team/img_team2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/img_team2@1x.jpg 1x,
+                    ./images/team/img_team2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img_team2@1x.jpg"
+                  alt="Photo frontend developer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
 
               <div class="card card-list-team">
                 <h3 class="name">Tom Ford</h3>
@@ -305,12 +375,40 @@
               </div>
             </li>
             <li class="field team-card">
-              <img
-                src="./images/team/img-3.jpg"
-                alt="Photo of a marketer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/team/img_team3@1x.jpg 1x,
+                    ./images/team/img_team3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img_team3@1x.jpg 1x,
+                    ./images/team/img_team3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/img_team3@1x.jpg 1x,
+                    ./images/team/img_team3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img_team3@1x.jpg"
+                  alt="Photo of a marketer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="card card-list-team">
                 <h3 class="name">Camila Garcia</h3>
                 <p class="position">Marketing</p>
@@ -371,12 +469,40 @@
               </div>
             </li>
             <li class="field team-card">
-              <img
-                src="./images/team/img-4.jpg"
-                alt="Photo of UI designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/team/img_team4@1x.jpg 1x,
+                    ./images/team/img_team4@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img_team4@1x.jpg 1x,
+                    ./images/team/img_team4@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/img_team4@1x.jpg 1x,
+                    ./images/team/img_team4@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img_team4@1x.jpg"
+                  alt="Photo of UI designer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="card card-list-team">
                 <h3 class="name">Daniel Wilson</h3>
                 <p class="position">UI Designer</p>
@@ -678,7 +804,9 @@
       </button>
 
       <ul class="mobile-menu list">
-        <li><a href="./index.html" class="link menu-contacts">Studio</a></li>
+        <li>
+          <a href="./index.html" class="link active menu-contacts">Studio</a>
+        </li>
         <li>
           <a href="./portfolio.html" class="link menu-contacts">Portfolio</a>
         </li>
@@ -686,7 +814,7 @@
       </ul>
 
       <ul class="mobile-contacts list">
-        <li>
+        <li class="tel-modal-menu">
           <a class="contacts-menu link" href="tel:+110001111111"
             >+11 (000) 111-11-11</a
           >
