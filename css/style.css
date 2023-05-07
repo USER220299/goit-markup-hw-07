@@ -358,6 +358,7 @@ ul {
       url(../images/hero/Dark-bg-tab@2x.jpg);
   }
 }
+/* Desctop Style */
 @media only screen and (min-width: 1158px) {
   .hero {
     padding-top: 188px;
@@ -372,6 +373,7 @@ ul {
     margin-bottom: 48px;
   }
 }
+
 @media (min-device-pixel-ratio: 2) and (min-width: 1158px),
   (min-resolution: 192dpi) and (min-width: 1158px),
   (min-resolution: 2dppx) and (min-width: 1158px) {
@@ -1061,8 +1063,6 @@ ul {
 }
 
 .modal {
-  overflow-y: auto;
-  height: 90%;
   padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
@@ -1079,6 +1079,8 @@ ul {
 }
 @media only screen and (max-width: 767px) {
   .modal {
+    overflow-y: auto;
+    height: 90%;
     width: 392px;
     padding: 72px 16px 24px 16px;
   }
