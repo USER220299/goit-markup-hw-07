@@ -660,6 +660,11 @@ ul {
 }
 
 /* Tablet Style */
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
+  .customers-container {
+    max-width: 582px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .client {
     gap: 72px 24px;
@@ -730,7 +735,6 @@ ul {
 }
 .footer-list-icon {
   align-items: baseline;
-  margin-right: 80px;
 }
 
 .footer-media {
@@ -823,6 +827,10 @@ ul {
     width: 100%;
     max-width: 398px;
   }
+  .form {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .footer-indent {
     margin-right: auto;
@@ -842,6 +850,11 @@ ul {
   justify-content: center;
 }
 /* Tablet Style */
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
+  .footer-container {
+    max-width: 582px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .form-footer {
     display: flex;
@@ -879,6 +892,9 @@ ul {
   }
   .footer-container {
     display: flex;
+  }
+  .footer-list-icon {
+    margin-right: 80px;
   }
 }
 
@@ -1077,12 +1093,22 @@ ul {
     0px 1px 1px rgba(0, 0, 0, 0.14);
   transition: transform 250ms ease-in 100ms, opacity 250ms ease-in 100ms;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 427px) {
+  .modal {
+    width: calc(100% - 30px);
+  }
+}
+
+@media only screen and (min-width: 428px) and (max-width: 767px) {
+  .modal {
+    width: 392px;
+    padding: 72px 16px 24px 16px;
+  }
+}
+@media only screen and (max-width: 1157px) {
   .modal {
     overflow-y: auto;
     height: 90%;
-    width: 392px;
-    padding: 72px 16px 24px 16px;
   }
 }
 
@@ -1273,7 +1299,7 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -1351,6 +1377,16 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
   color: var(--icon-hover-color);
 }
 
+@media only screen and (max-width: 427px) {
+  .contacts-menu {
+    font-size: 24px;
+  }
+  .mobile-social {
+    display: flex;
+    gap: 30px;
+    justify-content: left;
+  }
+}
 .mobile-contacts {
   margin-bottom: 48px;
 }
@@ -1369,12 +1405,14 @@ input[type='checkbox']:checked + .icon-vector > .icon-vector-checked {
 .contacts-menu-mail:hover {
   color: var(--icon-hover-color);
 }
-
-.mobile-social {
-  display: flex;
-  gap: 56px;
-  justify-content: left;
+@media only screen and (min-width: 428px) {
+  .mobile-social {
+    display: flex;
+    gap: 56px;
+    justify-content: left;
+  }
 }
+
 .menu-close-modal {
   position: absolute;
   top: 24px;
