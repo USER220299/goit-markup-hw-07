@@ -669,6 +669,9 @@ ul {
   .client {
     gap: 72px 24px;
   }
+  .clients-link {
+    width: 168px;
+  }
 }
 
 /* Desctop Style */
@@ -681,9 +684,6 @@ ul {
     display: flex;
     justify-content: center;
     gap: 24px;
-  }
-  .clients-link {
-    width: 168px;
   }
 }
 
@@ -702,7 +702,6 @@ ul {
 .logo-container {
   display: block;
   margin-bottom: 16px;
-  text-align: center;
 }
 .footer {
   background-color: var(--secondary-color);
@@ -823,6 +822,9 @@ ul {
 }
 
 @media only screen and (max-width: 767px) {
+  .logo-container {
+    text-align: center;
+  }
   .footer-email {
     width: 100%;
     max-width: 398px;
